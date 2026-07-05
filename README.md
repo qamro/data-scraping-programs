@@ -67,7 +67,7 @@ python for simple sites.py
 ## Program 2 : Selenium (JavaScript-rendered sites)
 
 ```bash
-python 2_scraper_selenium.py
+python for JavaScript sites.py
 ```
 
 **What it does:**
