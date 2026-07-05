@@ -38,7 +38,7 @@ HEADERS = {                                                    # HTTP headers se
 }
 
 # LOGGING SETUP — production code should never use plain print()
-# ---------------------------------------------------------------------------
+
 logging.basicConfig(                          # configures how log messages look
     level=logging.INFO,                        # show INFO level and above (INFO, WARNING, ERROR)
     format="%(asctime)s [%(levelname)s] %(message)s",  # add timestamp + severity to each log line
