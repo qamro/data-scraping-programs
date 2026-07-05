@@ -86,7 +86,7 @@ python for JavaScript sites.py
 ## Program 3 : Proxy rotation (large-scale scraping)
 
 ```bash
-python 3_scraper_proxy_rotation.py
+python using proxy rotation.py 
 ```
 
 **What it does:**
