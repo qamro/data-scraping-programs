@@ -1,5 +1,5 @@
 """
-PROGRAM 1 — Simple static-site scraper using Requests + BeautifulSoup
+PROGRAM 1 : Simple static-site scraper using Requests + BeautifulSoup
 Target: https://books.toscrape.com  (a real, live site made for scraping practice,
 no login, no JS-rendering needed, no anti-bot protection — perfect for BS4).
 
