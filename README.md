@@ -27,7 +27,7 @@ Every line of code is commented to explain what it does — these are meant as l
 ## Requirements
 
 - Python 3.10+
-- Google Chrome (installed on your system) — required for Programs 2 and 3's Selenium usage
+- Google Chrome (installed on your system), required for Programs 2 and 3's Selenium usage
 - pip
 
 ## Installation
