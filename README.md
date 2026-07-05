@@ -71,7 +71,7 @@ python for JavaScript sites.py
 ```
 
 **What it does:**
-- Launches headless Chrome (no visible window) via `webdriver-manager`, which auto-downloads the matching chromedriver — no manual driver setup needed
+- Launches headless Chrome (no visible window) via `webdriver-manager`, which auto-downloads the matching chromedriver (no manual driver setup needed)
 - Waits for the page's JavaScript to actually render the quotes before reading them
 - Clicks the "Next" button to page through the whole site
 - Extracts each quote's text, author, and tags
@@ -110,11 +110,11 @@ PROXIES = [
 Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through — don't use them here.
 
 You can also tune:
-- `TOTAL_PAGES` — how many pages the target site has
-- `MAX_WORKERS` — concurrency level
-- `MAX_RETRIES` / `BASE_BACKOFF` — retry behavior
+- `TOTAL_PAGES` : how many pages the target site has
+- `MAX_WORKERS` : concurrency level
+- `MAX_RETRIES` / `BASE_BACKOFF` : retry behavior
 
-**Resuming after a crash:** just run the script again — it reads `checkpoint.json` and only fetches pages not already marked done.
+**Resuming after a crash:** just run the script again, it reads `checkpoint.json` and only fetches pages not already marked done.
 
 ---
 
