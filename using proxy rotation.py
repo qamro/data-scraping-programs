@@ -37,7 +37,7 @@ from bs4 import BeautifulSoup                          # to parse the returned H
 
 # CONFIGURATION
 
-BASE_URL = "https://books.toscrape.com/"                # root URL of the target site
+BASE_URL = "https://books.toscrape.com/"                 # root URL of the target site
 TOTAL_PAGES = 50                                         # how many catalogue pages this site has (known in advance)
 OUTPUT_FILE = "books_data_proxy.csv"                     # final CSV output
 CHECKPOINT_FILE = "checkpoint.json"                      # stores which pages are already done
