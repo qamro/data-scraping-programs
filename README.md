@@ -4,7 +4,7 @@ Three production-style scraping programs, each demonstrating a different level o
 
 | # | Program | Library | Target site | Use case |
 |---|---------|---------|-------------|----------|
-| 1 | `1_scraper_beautifulsoup.py` | `requests` + `BeautifulSoup` | [books.toscrape.com](https://books.toscrape.com) | Simple static HTML sites |
+| 1 | `1_for simple sites.py` | `requests` + `BeautifulSoup` | [books.toscrape.com](https://books.toscrape.com) | Simple static HTML sites |
 | 2 | `2_scraper_selenium.py` | `selenium` | [quotes.toscrape.com/js](https://quotes.toscrape.com/js/) | JavaScript-rendered sites |
 | 3 | `3_scraper_proxy_rotation.py` | `requests` + `BeautifulSoup` + proxy rotation | [books.toscrape.com](https://books.toscrape.com) | High-volume scraping at scale |
 
