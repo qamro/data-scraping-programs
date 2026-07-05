@@ -83,7 +83,7 @@ python 2_scraper_selenium.py
 
 **Troubleshooting:** if Chrome fails to launch, confirm Google Chrome is installed and its version is compatible with the chromedriver `webdriver-manager` downloads (it should auto-match by default).
 
-## Program 3 — Proxy rotation (large-scale scraping)
+## Program 3 : Proxy rotation (large-scale scraping)
 
 ```bash
 python 3_scraper_proxy_rotation.py
