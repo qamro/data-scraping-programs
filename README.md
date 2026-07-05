@@ -4,9 +4,9 @@ Three production-style scraping programs, each demonstrating a different level o
 
 | # | Program | Library | Target site | Use case |
 |---|---------|---------|-------------|----------|
-| 1 | `1_for simple sites.py` | `requests` + `BeautifulSoup` | [books.toscrape.com](https://books.toscrape.com) | Simple static HTML sites |
-| 2 | `2_for JavaScript sites.py` | `selenium` | [quotes.toscrape.com/js](https://quotes.toscrape.com/js/) | JavaScript-rendered sites |
-| 3 | `3_using proxy rotation.py` | `requests` + `BeautifulSoup` + proxy rotation | [books.toscrape.com](https://books.toscrape.com) | High-volume scraping at scale |
+| 1 | `for simple sites.py` | `requests` + `BeautifulSoup` | [books.toscrape.com](https://books.toscrape.com) | Simple static HTML sites |
+| 2 | `for JavaScript sites.py` | `selenium` | [quotes.toscrape.com/js](https://quotes.toscrape.com/js/) | JavaScript-rendered sites |
+| 3 | `using proxy rotation.py` | `requests` + `BeautifulSoup` + proxy rotation | [books.toscrape.com](https://books.toscrape.com) | High-volume scraping at scale |
 
 Every line of code is commented to explain what it does — these are meant as learning references as well as working scrapers.
 
@@ -51,7 +51,7 @@ If you're on Debian/Ubuntu and get an `externally-managed-environment` error, it
 ## Program 1 : BeautifulSoup (static sites)
 
 ```bash
-python 1_scraper_beautifulsoup.py
+python for simple sites.py
 ```
 
 **What it does:**
