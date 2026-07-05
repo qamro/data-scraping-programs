@@ -29,9 +29,8 @@ from selenium.common.exceptions import (                       # specific Seleni
 )
 from webdriver_manager.chrome import ChromeDriverManager        # auto-downloads the right chromedriver version
 
-# ---------------------------------------------------------------------------
 # CONFIGURATION
-# ---------------------------------------------------------------------------
+
 START_URL = "https://quotes.toscrape.com/js/"    # the JS-rendered version of the site
 OUTPUT_FILE = "quotes_data.csv"                  # output CSV filename
 PAGE_LOAD_TIMEOUT = 15                            # max seconds to wait for the page/elements to load
