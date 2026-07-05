@@ -107,7 +107,7 @@ PROXIES = [
 ]
 ```
 
-Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through — don't use them here.
+Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through (I recommand you to don't use them here).
 
 You can also tune:
 - `TOTAL_PAGES` : how many pages the target site has
