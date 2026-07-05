@@ -37,7 +37,6 @@ HEADERS = {                                                    # HTTP headers se
     "Accept-Language": "en-US,en;q=0.9",                       # tells the server we prefer English content
 }
 
-# ---------------------------------------------------------------------------
 # LOGGING SETUP — production code should never use plain print()
 # ---------------------------------------------------------------------------
 logging.basicConfig(                          # configures how log messages look
