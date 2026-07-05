@@ -96,9 +96,8 @@ python using proxy rotation.py
 - Retries failed requests with exponential backoff + jitter
 - Saves progress to `checkpoint.json` after every page, so if the script crashes or is stopped, re-running it resumes instead of starting over
 - Writes final results to `books_data_proxy.csv` and deletes the checkpoint on success
-
 **Before running this one, edit the script:**
-
+ 
 ```python
 PROXIES = [
     "http://user:pass@proxy1.yourprovider.com:8000",
@@ -106,15 +105,24 @@ PROXIES = [
     "http://user:pass@proxy3.yourprovider.com:8000",
 ]
 ```
+ 
+Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through — don't use them here.
+ 
+**Settings you can tune:**
+ 
+| Setting | What it controls |
+|---|---|
+| `TOTAL_PAGES = 50` | How many pages the site has. The script builds URLs `page-1.html` → `page-50.html`. Set this to match your target site or it'll stop early / request pages that don't exist. |
+| `MAX_WORKERS = 8` | How many pages are scraped **at the same time** (in parallel threads). Higher = faster but more load on the server/proxies. `1` = one page at a time, like Program 1. |
+| `MAX_RETRIES = 4` | How many times a failed page is retried before being skipped. |
+| `BASE_BACKOFF = 1.5` | Base wait time (seconds) between retries. Wait time doubles each retry (1.5s → 3s → 6s...), so a struggling server/proxy gets time to recover instead of being hammered. |
+ 
+**Resuming after a crash:**
+ 
+Every time a page finishes, its number is saved to `checkpoint.json` along with the data collected so far. If the script crashes, loses connection, or you stop it with `Ctrl+C`, just **run it again** — it reads that file, skips every page already marked done, and only fetches what's left.
+ 
+`checkpoint.json` is deleted automatically once the scrape finishes successfully. If you see it still sitting in your folder, that means the last run didn't finish — running the script again will pick up where it left off.
 
-Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through (I recommand you to don't use them here).
-
-You can also tune:
-- `TOTAL_PAGES` : how many pages the target site has
-- `MAX_WORKERS` : concurrency level
-- `MAX_RETRIES` / `BASE_BACKOFF` : retry behavior
-
-**Resuming after a crash:** just run the script again, it reads `checkpoint.json` and only fetches pages not already marked done.
 
 ---
 
