@@ -8,7 +8,7 @@ Three production-style scraping programs, each demonstrating a different level o
 | 2 | `for JavaScript sites.py` | `selenium` | [quotes.toscrape.com/js](https://quotes.toscrape.com/js/) | JavaScript-rendered sites |
 | 3 | `using proxy rotation.py` | `requests` + `BeautifulSoup` + proxy rotation | [books.toscrape.com](https://books.toscrape.com) | High-volume scraping at scale |
 
-Every line of code is commented to explain what it does — these are meant as learning references as well as working scrapers.
+Every line of code is commented to explain what it does "these are meant as learning references as well as working scrapers".
 
 > **Legal note:** These scripts target `books.toscrape.com` and `quotes.toscrape.com`, two sites explicitly built and maintained for scraping practice. If you point any of these programs at a different site, check that site's `robots.txt` and Terms of Service first, and scrape responsibly (rate-limit your requests, identify yourself honestly, and don't overload a server that hasn't agreed to it).
 
@@ -132,10 +132,18 @@ Open them with Excel, Google Sheets, `pandas.read_csv()`, or any CSV viewer.
 
 ## Notes on scaling to real production use
 
-- Always add delays between requests when scraping a real business's site — the delays and concurrency caps in these scripts are intentional, not just style choices.
+- Always add delays between requests when scraping a real business's site, the delays and concurrency caps in these scripts are intentional, not just style choices.
 - Respect `robots.txt` and a site's Terms of Service before scraping it.
 - Log everything (all three programs already do this) so you can diagnose failures without re-running blind.
 - For sites that require login/session cookies, you'll need to extend Programs 1/2 to authenticate first and reuse the session/cookies on subsequent requests.
+
+---
+
+## Author
+
+Built by **Bakhouche Mohamed Qamar Eddine** 
+
+---
 
 ## License
 
