@@ -64,7 +64,7 @@ python 1_scraper_beautifulsoup.py
 - `BASE_URL` / `START_URL`
 - The CSS selectors inside `parse_book_card()` to match the target site's HTML
 
-## Program 2 — Selenium (JavaScript-rendered sites)
+## Program 2 : Selenium (JavaScript-rendered sites)
 
 ```bash
 python 2_scraper_selenium.py
