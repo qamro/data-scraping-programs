@@ -106,7 +106,7 @@ PROXIES = [
 ]
 ```
  
-Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through — don't use them here.
+Replace these with real proxies from a provider you legally pay for or are authorized to use. Free public proxy lists are unreliable and unsafe to route real traffic through (I recommand you to don't use them here).
  
 **Settings you can tune:**
  
@@ -119,9 +119,9 @@ Replace these with real proxies from a provider you legally pay for or are autho
  
 **Resuming after a crash:**
  
-Every time a page finishes, its number is saved to `checkpoint.json` along with the data collected so far. If the script crashes, loses connection, or you stop it with `Ctrl+C`, just **run it again** — it reads that file, skips every page already marked done, and only fetches what's left.
+Every time a page finishes, its number is saved to `checkpoint.json` along with the data collected so far. If the script crashes, loses connection, or you stop it with `Ctrl+C`, just **run it again**, it reads that file, skips every page already marked done, and only fetches what's left.
  
-`checkpoint.json` is deleted automatically once the scrape finishes successfully. If you see it still sitting in your folder, that means the last run didn't finish — running the script again will pick up where it left off.
+`checkpoint.json` is deleted automatically once the scrape finishes successfully. If you see it still sitting in your folder, that means the last run didn't finish, running the script again will pick up where it left off.
 
 
 ---
