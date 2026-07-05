@@ -41,16 +41,10 @@ cd <your-repo-folder>
 python3 -m venv venv
 source venv/bin/activate        # on Windows: venv\Scripts\activate
 
-pip install -r requirements.txt
-```
-
-Or install the dependencies directly without the requirements file:
-
-```bash
 pip install requests beautifulsoup4 selenium webdriver-manager
 ```
 
-If you're on Debian/Ubuntu and get an `externally-managed-environment` error, it means you're trying to install outside a virtual environment — use the `venv` steps above instead.
+If you're on Debian/Ubuntu and get an `externally-managed-environment` error, it means you're trying to install outside a virtual environment, so use the `venv` steps above instead.
 
 ---
 
