@@ -48,7 +48,7 @@ If you're on Debian/Ubuntu and get an `externally-managed-environment` error, it
 
 ---
 
-## Program 1 — BeautifulSoup (static sites)
+## Program 1 : BeautifulSoup (static sites)
 
 ```bash
 python 1_scraper_beautifulsoup.py
