@@ -19,7 +19,7 @@ import requests                              # to send HTTP requests and downloa
 from bs4 import BeautifulSoup                # to parse HTML and extract data with CSS selectors
 
 # CONFIGURATION — change these values depending on the site you scrape
-# ---------------------------------------------------------------------------
+
 BASE_URL = "https://books.toscrape.com/"                     # root URL of the site
 START_URL = urljoin(BASE_URL, "catalogue/page-1.html")        # first page of the catalogue
 OUTPUT_FILE = "books_data.csv"                                # name of the CSV file to produce
