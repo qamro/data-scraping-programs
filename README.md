@@ -18,10 +18,9 @@ Every line of code is commented to explain what it does — these are meant as l
 
 ```
 .
-├── 1_scraper_beautifulsoup.py     # Program 1: static site scraper
-├── 2_scraper_selenium.py          # Program 2: JS-rendered site scraper
-├── 3_scraper_proxy_rotation.py    # Program 3: proxy-rotating, concurrent scraper
-├── requirements.txt               # Python dependencies for all 3 programs
+├── 1_for simple sites.py         # Program 1: static site scraper
+├── 2_for JavaScript sites.py          # Program 2: JS-rendered site scraper
+├── 3_using proxy rotation.py    # Program 3: proxy-rotating, concurrent scraper
 └── README.md                      # this file
 ```
 
