@@ -51,7 +51,7 @@ If you're on Debian/Ubuntu and get an `externally-managed-environment` error, it
 ## Program 1 : BeautifulSoup (static sites)
 
 ```bash
-python "for simple sites.py
+python "for simple sites.py"
 ```
 
 **What it does:**
