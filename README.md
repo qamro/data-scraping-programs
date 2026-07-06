@@ -138,6 +138,10 @@ Each program produces a CSV file in the same folder it's run from:
 
 Open them with Excel, Google Sheets, `pandas.read_csv()`, or any CSV viewer.
 
+
+---
+
+
 ## Notes on scaling to real production use
 
 - Always add delays between requests when scraping a real business's site, the delays and concurrency caps in these scripts are intentional, not just style choices.
